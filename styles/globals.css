@@ -7,3 +7,39 @@
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibre, 'Trebuchet MS', sans-serif
 }
+
+.hamburger {
+  position: relative;
+  top: 56px;
+  width: 30px;
+  height: 6px;
+  margin: 0 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.hamburger::before {
+  top: -12px;
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.hamburger::after {
+  top: 12px;
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.iconActive .hamburger{
+  background-color: transparent;
+  box-shadow: 0 2px 5px transparent;
+}
+
