@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { HEADER_OPTIONS } from "../../constants";
 
 export default function Header() {
-  const [showMobileMenu, setShowMobileMenu] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(true);
 
   useEffect(() => {
     var oldScrollY = window.scrollY;
@@ -11,10 +12,12 @@ export default function Header() {
         setMenuOpen(false);
         setTimeout(() => {
           setShowMobileMenu(false);
-        }, 400);
+        }, 300);
       } else {
-        setShowMobileMenu(true);
         setMenuOpen(false);
+        setTimeout(() => {
+          setShowMobileMenu(true);
+        }, 300);
       }
       oldScrollY = window.scrollY;
     };
@@ -25,41 +28,54 @@ export default function Header() {
   }, [showMobileMenu]);
 
   return (
-    <header className={`fixed w-full bg-primary-background `}>
-      <nav className="px-6 text-white">
-        <div
-          className={`${menuOpen ? "iconActive" : ""} ${
-            showMobileMenu
-              ? "visible h-[112px] overflow-y-auto"
-              : "invisible h-0 overflow-y-hidden"
-          } flex w-full flex-col items-end duration-500 ease-out`}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+    <>
+      <header className={`fixed w-full bg-primary-background`}>
+        <nav className="px-6 text-white">
           <div
-            className={`hamburger bg-primary-primary before:bg-primary-primary after:bg-primary-primary ${
-              menuOpen
-                ? "before:top-0 before:rotate-[135deg] after:top-0 after:rotate-[225deg]"
-                : ""
-            }`}
-          />
-        </div>
-        <div
-          className={`${
-            menuOpen
-              ? "visible h-[112px] overflow-y-auto"
-              : "invisible h-0 overflow-y-hidden"
-          } flex w-full flex-col items-end duration-500 ease-out`}
-        >
-          <div className="list">
-            <ul className="listItem">
-              <li>HOME</li>
-              <li>HOME</li>
-              <li>HOME</li>
-              <li>HOME</li>
+            className={`${menuOpen ? "iconActive" : ""} ${
+              showMobileMenu
+                ? "visible h-[112px] overflow-auto"
+                : "invisible h-0 overflow-hidden"
+            } flex items-center justify-between transition-all duration-150`}
+          >
+            <h1 className="overflow-hidden text-5xl text-primary-primary shadow">
+              L
+            </h1>
+            <button
+              className={`hamburger bg-primary-primary before:bg-primary-primary after:bg-primary-primary ${
+                menuOpen
+                  ? "bg-transparent shadow-none before:top-0 before:rotate-[135deg] after:top-0 after:rotate-[225deg]"
+                  : ""
+              }`}
+              onClick={() => setMenuOpen(!menuOpen)}
+            />
+          </div>
+          <div
+            className={`${
+              menuOpen ? "w-[80%]" : "w-0"
+            } fixed right-0 top-0 h-screen bg-primary-background duration-700 ease-in-out`}
+          >
+            <ul className="mt-28 flex w-full flex-col items-center justify-center gap-5 overflow-x-hidden p-4">
+              {HEADER_OPTIONS.map(({ key, word }) => (
+                <li key={key}>
+                  <div className="text-center">
+                    <p className="font-mono text-primary-primary">{key}</p>
+                    <p className="font-mono text-primary-secondary-100 transition-all hover:text-primary-primary">
+                      {word}
+                    </p>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+      <div
+        id="backdrop"
+        className={`fixed inset-0 z-0 backdrop-blur-sm ${
+          menuOpen ? "visible h-screen w-[20%]" : "invisible h-0 w-0"
+        } duration-700 ease-in-out`}
+      ></div>
+    </>
   );
 }
