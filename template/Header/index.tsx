@@ -27,16 +27,19 @@ export default function Header() {
   useEffect(() => {
     console.log(showMobileMenu);
   }, [showMobileMenu]);
-
+  // 0 10px 30px -10px var(--navy-shadow)
+  // rgba(2,12,27,0.7)
   return (
     <>
-      <header className={`fixed w-full bg-primary-background`}>
+      <header
+        className={`bg-[rgba(10, 25, 47, 0.85)] fixed z-20 w-full shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] backdrop-blur-sm`}
+      >
         <Fade delayMs={300} durationMs={600}>
           <nav className="px-6 text-white">
             <div
               className={`${menuOpen ? "iconActive" : ""} ${
                 showMobileMenu
-                  ? "visible h-[112px] overflow-auto"
+                  ? "visible h-16 overflow-auto"
                   : "invisible h-0 overflow-hidden"
               } flex items-center justify-between transition-all duration-150`}
             >
@@ -55,7 +58,7 @@ export default function Header() {
             <div
               className={`${
                 menuOpen ? "w-[70%]" : "w-0"
-              } fixed right-0 top-0 h-screen bg-primary-background duration-700 ease-in-out`}
+              } fixed right-0 top-0 h-screen bg-[#112240] shadow-xl duration-700 ease-in-out`}
             >
               <ul className="mt-28 flex w-full flex-col items-center justify-center gap-5 overflow-x-hidden p-4">
                 {HEADER_OPTIONS.map(({ key, word }) => (
@@ -75,7 +78,7 @@ export default function Header() {
       </header>
       <div
         id="backdrop"
-        className={`fixed inset-0 z-0 backdrop-blur-sm ${
+        className={`fixed inset-0 z-10 backdrop-blur-sm ${
           menuOpen ? "visible h-screen w-[30%]" : "invisible h-0 w-0"
         } duration-700 ease-in-out`}
       ></div>

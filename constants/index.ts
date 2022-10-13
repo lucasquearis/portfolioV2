@@ -16,3 +16,14 @@ export const HEADER_OPTIONS = [
     word: "Contact",
   },
 ];
+
+export const RECENTS_TOOLS = [
+  "React.js",
+  "Next.js",
+  "Tailwind",
+  "Styled Components",
+  "antd",
+  "Single Spa",
+  "TypeScript",
+  "StoryBook",
+];
