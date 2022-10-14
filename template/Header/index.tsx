@@ -27,8 +27,7 @@ export default function Header() {
   useEffect(() => {
     console.log(showMobileMenu);
   }, [showMobileMenu]);
-  // 0 10px 30px -10px var(--navy-shadow)
-  // rgba(2,12,27,0.7)
+
   return (
     <>
       <header
