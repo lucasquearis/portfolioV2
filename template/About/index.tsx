@@ -6,7 +6,7 @@ import perfil from "../../public/assets/images/perfil.jpeg";
 
 export default function About() {
   return (
-    <section className="py-14">
+    <section id="about" className="py-14">
       <div>
         <TitleSection number="before:content-['01.']">About Me</TitleSection>
         <div className="text-lg">

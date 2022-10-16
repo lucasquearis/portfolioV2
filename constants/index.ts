@@ -2,18 +2,22 @@ export const HEADER_OPTIONS = [
   {
     key: "01.",
     word: "About",
+    anchor: "#about",
   },
   {
     key: "02.",
     word: "Experience",
+    anchor: "#experience",
   },
   {
     key: "03.",
     word: "Work",
+    anchor: "#work",
   },
   {
     key: "04.",
     word: "Contact",
+    anchor: "#contact",
   },
 ];
 

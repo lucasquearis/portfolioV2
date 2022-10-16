@@ -56,13 +56,15 @@ export default function Header() {
               } fixed right-0 top-0 h-screen bg-[#112240] shadow-xl duration-700 ease-in-out`}
             >
               <ul className="mt-28 flex w-full flex-col items-center justify-center gap-5 overflow-x-hidden p-4">
-                {HEADER_OPTIONS.map(({ key, word }) => (
+                {HEADER_OPTIONS.map(({ key, word, anchor }) => (
                   <li key={key}>
                     <div className="text-center">
                       <p className="font-mono text-primary-primary">{key}</p>
-                      <p className="font-mono text-primary-secondary-100 transition-all hover:text-primary-primary">
-                        {word}
-                      </p>
+                      <a href={anchor}>
+                        <span className="font-mono text-primary-secondary-100 transition-all hover:text-primary-primary">
+                          {word}
+                        </span>
+                      </a>
                     </div>
                   </li>
                 ))}

@@ -5,7 +5,7 @@ import { PROJECTS } from "../../constants";
 
 export default function Projects() {
   return (
-    <section className="py-14">
+    <section id="work" className="py-14">
       <TitleSection number="before:content-['03.']">
         Some things I've built
       </TitleSection>

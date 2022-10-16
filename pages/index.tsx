@@ -3,6 +3,7 @@ import About from "../template/About";
 import Projects from "../template/Projects";
 import Welcome from "../template/Welcome";
 import Work from "../template/Work";
+import Contact from "../template/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <About />
       <Work />
       <Projects />
+      <Contact />
     </main>
   );
 };

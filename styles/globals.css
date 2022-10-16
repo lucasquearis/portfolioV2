@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibre, 'Trebuchet MS', sans-serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibre, 'Trebuchet MS', sans-serif;
+  scroll-behavior: smooth; 
 }
 
 .hamburger {
