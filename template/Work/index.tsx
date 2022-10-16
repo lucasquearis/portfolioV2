@@ -16,9 +16,11 @@ export default function Work() {
 
   return (
     <section className="py-14">
-      <TitleSection>Where I've Worked</TitleSection>
+      <TitleSection number="before:content-['02.']">
+        Where I've Worked
+      </TitleSection>
       <ul className="scrollExperiences relative flex w-full overflow-x-auto">
-        {PROFESSIONAL_EXPERIENCES.map(({ company }, index) => (
+        {PROFESSIONAL_EXPERIENCES.map(({ company: { name } }, index) => (
           <li
             key={index}
             className="mb-1 h-14 min-w-[150px] border-b-2 border-[#233554] text-center text-sm text-primary-secondary-200"
@@ -27,12 +29,12 @@ export default function Work() {
               className="flex h-full w-full items-center justify-center"
               onClick={() => setSelectedTab(index)}
             >
-              <span>{company}</span>
+              <span>{name}</span>
             </button>
           </li>
         ))}
         <div
-          className={`absolute top-[54px] z-50 h-[2px] w-[150px] rounded bg-primary-primary transition-all duration-700 ${tabSizeTranslate[selectedTab]}`}
+          className={`absolute top-[54px] h-[2px] w-[150px] rounded bg-primary-primary transition-all duration-700 ${tabSizeTranslate[selectedTab]}`}
         />
       </ul>
       <div className="mt-7">
@@ -42,8 +44,11 @@ export default function Work() {
           </span>
           <span className="text-primary-primary">@</span>
           <span className="text-primary-primary">
-            <a href="https://previdenciarista.com/" target="_blank">
-              {PROFESSIONAL_EXPERIENCES[selectedTab].company}
+            <a
+              href={PROFESSIONAL_EXPERIENCES[selectedTab].company.site}
+              target="_blank"
+            >
+              {PROFESSIONAL_EXPERIENCES[selectedTab].company.name}
             </a>
           </span>
         </h3>

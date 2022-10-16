@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section className="py-14">
       <div>
-        <TitleSection>About Me</TitleSection>
+        <TitleSection number="before:content-['01.']">About Me</TitleSection>
         <div className="text-lg">
           <p className="mb-2 text-primary-secondary-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero

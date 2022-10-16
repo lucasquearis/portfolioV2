@@ -30,7 +30,10 @@ export const RECENTS_TOOLS = [
 
 export const PROFESSIONAL_EXPERIENCES = [
   {
-    company: "Previdenciarista",
+    company: {
+      name: "Previdenciarista",
+      site: "https://previdenciarista.com/",
+    },
     about: [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",

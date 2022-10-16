@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import About from "../template/About";
+import Projects from "../template/Projects";
 import Welcome from "../template/Welcome";
 import Work from "../template/Work";
 
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
       <Welcome />
       <About />
       <Work />
+      <Projects />
     </main>
   );
 };
