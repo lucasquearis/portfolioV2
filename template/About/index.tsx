@@ -1,4 +1,5 @@
 import Image from "next/image";
+import StyledLi from "../../components/StyledLi";
 import TitleSection from "../../components/TitleSection";
 import { RECENTS_TOOLS } from "../../constants";
 import perfil from "../../public/images/perfil.jpeg";
@@ -8,7 +9,7 @@ export default function About() {
     <section className="py-14">
       <div>
         <TitleSection>About Me</TitleSection>
-        <div>
+        <div className="text-lg">
           <p className="mb-2 text-primary-secondary-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero
             perspiciatis autem quisquam ipsum in molestias. Ut animi neque
@@ -28,14 +29,9 @@ export default function About() {
             repellendus incidunt exercitationem asperiores.
           </p>
         </div>
-        <ul className="mt-5 grid grid-cols-2 p-0 text-lg text-primary-secondary-200">
+        <ul className="mt-5 grid grid-cols-2 p-0 text-sm text-primary-secondary-200">
           {RECENTS_TOOLS.map((tool) => (
-            <li
-              key={tool}
-              className="mb-2.5 text-sm before:pr-2.5 before:text-primary-primary before:content-['▹']"
-            >
-              {tool}
-            </li>
+            <StyledLi key={tool} item={tool} />
           ))}
         </ul>
       </div>

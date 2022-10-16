@@ -24,10 +24,6 @@ export default function Header() {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(showMobileMenu);
-  }, [showMobileMenu]);
-
   return (
     <>
       <header
