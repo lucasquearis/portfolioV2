@@ -1,15 +1,15 @@
 import Image from "next/image";
+import StyledLi from "../../components/StyledLi";
+import TitleSection from "../../components/TitleSection";
 import { RECENTS_TOOLS } from "../../constants";
-import perfil from "../../public/images/perfil.jpeg";
+import perfil from "../../public/assets/images/perfil.jpeg";
 
 export default function About() {
   return (
-    <section className="mb-96">
+    <section id="about" className="py-14">
       <div>
-        <h2 className="relative z-0 mb-10 mt-2.5 flex w-full items-center gap-1 whitespace-nowrap font-mono text-2xl font-bold text-primary-secondary-100 before:mr-1 before:font-mono before:text-lg before:text-primary-primary before:content-['01.'] after:relative after:top-[1px] after:ml-1 after:block after:h-[1px] after:w-full after:bg-primary-secondary-200 after:opacity-30">
-          About Me
-        </h2>
-        <div>
+        <TitleSection number="before:content-['01.']">About Me</TitleSection>
+        <div className="text-lg">
           <p className="mb-2 text-primary-secondary-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero
             perspiciatis autem quisquam ipsum in molestias. Ut animi neque
@@ -29,11 +29,9 @@ export default function About() {
             repellendus incidunt exercitationem asperiores.
           </p>
         </div>
-        <ul className="mt-5 grid grid-cols-2 p-0 text-lg text-primary-secondary-200">
+        <ul className="mt-5 grid grid-cols-2 p-0 text-sm text-primary-secondary-200">
           {RECENTS_TOOLS.map((tool) => (
-            <li className="mb-2.5 text-sm before:pr-2.5 before:text-primary-primary before:content-['▹']">
-              {tool}
-            </li>
+            <StyledLi key={tool} item={tool} />
           ))}
         </ul>
       </div>
