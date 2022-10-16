@@ -2,7 +2,7 @@ import Image from "next/image";
 import StyledLi from "../../components/StyledLi";
 import TitleSection from "../../components/TitleSection";
 import { RECENTS_TOOLS } from "../../constants";
-import perfil from "../../public/images/perfil.jpeg";
+import perfil from "../../public/assets/images/perfil.jpeg";
 
 export default function About() {
   return (

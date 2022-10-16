@@ -46,3 +46,40 @@ export const PROFESSIONAL_EXPERIENCES = [
     office: "Front-end Developer",
   },
 ];
+
+export const PROJECTS = [
+  {
+    name: "Free to play games",
+    url: "https://free-to-play-project.vercel.app/",
+    githubUrl: "https://github.com/lucasquearis/free-to-play-project",
+    description:
+      "An application that offers you a variety of free games. For those moments of boredom or even to find a game to play",
+    technologies: [
+      "Reactjs",
+      "Context Api",
+      "Bootstrap",
+      "Free API",
+      "React Router DOM",
+      "Vercel Deploy",
+    ],
+    imagePath: "/assets/images/bg-rpg.gif",
+  },
+  {
+    name: "My first Portfólio",
+    url: "https://lucasquearis.github.io/portfolio/",
+    githubUrl: "https://github.com/lucasquearis/portfolio",
+    description:
+      "This was my first portfolio, I finished it as soon as I finished the Front-end module on Trybe",
+    technologies: ["Reactjs", "Bootstrap", "Github Pages Deploy"],
+    imagePath: "/assets/images/portfolio_1.png",
+  },
+  {
+    name: "My second Portfólio",
+    url: "#",
+    githubUrl: "https://github.com/lucasquearis/portfolioV2",
+    description:
+      "This was my second and last portfolio so far, I decided to do it in Nextjs and Tailwind to learn new technologies",
+    technologies: ["Nextjs", "Tailwind", "Vercel Deploy"],
+    imagePath: "/assets/images/portfolio.png",
+  },
+];
