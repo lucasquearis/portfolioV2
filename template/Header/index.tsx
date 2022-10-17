@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`bg-[rgba(10, 25, 47, 0.85)] fixed z-20 w-full shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] backdrop-blur-sm`}
+        className={`fixed z-20 w-full bg-primary-background-opacity shadow-custom backdrop-blur-sm`}
       >
         <Fade delayMs={300} durationMs={600}>
           <nav className="px-6 text-white">
@@ -42,10 +42,10 @@ export default function Header() {
                 L
               </h1>
               <button
-                className={`hamburger bg-primary-text-primary before:bg-primary-text-primary after:bg-primary-text-primary ${
+                className={`hamburger before:bg-primary-text-primary after:bg-primary-text-primary ${
                   menuOpen
                     ? "bg-transparent shadow-none before:top-0 before:rotate-[135deg] after:top-0 after:rotate-[225deg]"
-                    : ""
+                    : "bg-primary-text-primary"
                 }`}
                 onClick={() => setMenuOpen(!menuOpen)}
               />
