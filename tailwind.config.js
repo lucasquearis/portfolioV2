@@ -20,14 +20,14 @@ module.exports = {
       colors: {
         primary: {
           background: {
-            primary: "#0A192F",
+            primary: "#243247",
             secondary: "#112240",
-            border: "#233554",
-            opacity: "rgba(10, 25, 47, 0.85)",
+            border: "#334159",
+            opacity: "rgba(36, 50, 71, 0.85)",
             shadow: "rgba(2,12,27,0.7)",
           },
           text: {
-            primary: "#64ffda",
+            primary: "#FF8A63",
             navy: {
               navy: "#8892b0",
               light: "#ccd6f6",
