@@ -19,11 +19,17 @@ module.exports = {
       },
       colors: {
         primary: {
-          background: "#0A192F",
-          primary: "#64ffda",
-          secondary: {
-            100: "#ccd6f6",
-            200: "#8892b0",
+          background: {
+            primary: "#0A192F",
+            secondary: "#112240",
+            border: "#233554",
+          },
+          text: {
+            primary: "#64ffda",
+            navy: {
+              navy: "#8892b0",
+              light: "#ccd6f6",
+            },
           },
         },
       },

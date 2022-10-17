@@ -25,29 +25,31 @@ export default function ProjectCard({
       <div className="relative h-full w-full">
         {image}
         {/* background effect opacity */}
-        <div className="absolute h-full w-full bg-primary-background opacity-90" />
+        <div className="absolute h-full w-full bg-primary-background-primary opacity-90" />
         <div className="relative p-5">
-          <p className="my-2.5 text-sm text-primary-primary">{projectName}</p>
-          <h3 className="mb-2.5 text-2xl font-semibold text-white transition-colors duration-300 hover:text-primary-primary">
+          <p className="my-2.5 text-sm text-primary-text-primary">
+            {projectName}
+          </p>
+          <h3 className="mb-2.5 text-2xl font-semibold text-white transition-colors duration-300 hover:text-primary-text-primary">
             <a href={projectUrl} target="_blank">
               {projectName}
             </a>
           </h3>
-          <p className="py-5 text-lg text-primary-secondary-100">
+          <p className="py-5 text-lg text-primary-text-navy-light">
             {projectDescription}
           </p>
-          <ul className="my-5 flex flex-wrap justify-start gap-2 text-sm text-primary-secondary-100">
+          <ul className="my-5 flex flex-wrap justify-start gap-2 text-sm text-primary-text-navy-light">
             {projectTechnologies.map((tecnologie) => (
               <StyledLi key={tecnologie} item={tecnologie} />
             ))}
           </ul>
           <ul className="flex gap-5">
-            <li className="text-primary-secondary-100">
+            <li className="text-primary-text-navy-light">
               <a href={githubUrl} target="_blank">
                 <GithubIcon />
               </a>
             </li>
-            <li className="h-6 w-6 text-primary-secondary-100">
+            <li className="h-6 w-6 text-primary-text-navy-light">
               <a href={projectUrl} target="_blank">
                 <GoToIcon />
               </a>
