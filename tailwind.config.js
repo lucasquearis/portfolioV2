@@ -28,6 +28,7 @@ module.exports = {
           },
           text: {
             primary: "#FF8A63",
+            opacity: "rgba(255,138,99,0.1)",
             navy: {
               navy: "#8892b0",
               light: "#ccd6f6",
