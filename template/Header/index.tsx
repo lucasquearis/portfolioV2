@@ -30,7 +30,7 @@ export default function Header() {
         className={`fixed z-20 w-full bg-primary-background-opacity shadow-custom backdrop-blur-sm`}
       >
         <Fade delayMs={300} durationMs={600}>
-          <nav className="px-6 text-white">
+          <nav className="px-6 text-white md:px-12">
             <div
               className={`${menuOpen ? "iconActive" : ""} ${
                 showMobileMenu
@@ -41,8 +41,24 @@ export default function Header() {
               <h1 className="overflow-hidden text-5xl text-primary-text-primary shadow">
                 L
               </h1>
+              <ul className="hidden md:flex md:gap-4">
+                {HEADER_OPTIONS.map(({ key, word, anchor }) => (
+                  <li className="flex" key={key}>
+                    <div className="text-center md:flex">
+                      <p className="font-mono text-primary-text-primary">
+                        {key}
+                      </p>
+                      <a href={anchor}>
+                        <span className="font-mono text-primary-text-navy-light transition-all hover:text-primary-text-primary">
+                          {word}
+                        </span>
+                      </a>
+                    </div>
+                  </li>
+                ))}
+              </ul>
               <button
-                className={`hamburger before:bg-primary-text-primary after:bg-primary-text-primary ${
+                className={`hamburger before:bg-primary-text-primary after:bg-primary-text-primary md:hidden ${
                   menuOpen
                     ? "bg-transparent shadow-none before:top-0 before:rotate-[135deg] after:top-0 after:rotate-[225deg]"
                     : "bg-primary-text-primary"
@@ -53,7 +69,7 @@ export default function Header() {
             <div
               className={`${
                 menuOpen ? "w-[70%]" : "w-0"
-              } fixed right-0 top-0 h-screen bg-primary-background-secondary shadow-xl duration-700 ease-in-out`}
+              } fixed right-0 top-0 h-screen bg-primary-background-secondary shadow-xl duration-700 ease-in-out md:hidden`}
             >
               <ul className="mt-28 flex w-full flex-col items-center justify-center gap-5 overflow-x-hidden p-4">
                 {HEADER_OPTIONS.map(({ key, word, anchor }) => (
