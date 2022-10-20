@@ -4,7 +4,7 @@ interface IStyledLi {
 
 export default function StyledLi({ item }: IStyledLi) {
   return (
-    <li className="mb-2.5 before:pr-2.5 before:text-primary-primary before:content-['▹']">
+    <li className="mb-2.5 before:pr-2.5 before:text-primary-text-primary before:content-['▹']">
       {item}
     </li>
   );
