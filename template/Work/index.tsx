@@ -1,5 +1,6 @@
 import { useState } from "react";
 import StyledLi from "../../components/StyledLi";
+import StyledLink from "../../components/StyledLink";
 import TitleSection from "../../components/TitleSection";
 import { PROFESSIONAL_EXPERIENCES } from "../../constants";
 
@@ -48,14 +49,19 @@ export default function Work() {
               {PROFESSIONAL_EXPERIENCES[selectedTab].office}
             </span>
             <span className="text-primary-text-primary">@</span>
-            <span className="relative text-primary-text-primary after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-primary-text-primary after:transition-all hover:after:origin-bottom-left hover:after:scale-100">
+            {/* <span className="relative text-primary-text-primary after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-primary-text-primary after:transition-all hover:after:origin-bottom-left hover:after:scale-100">
               <a
                 href={PROFESSIONAL_EXPERIENCES[selectedTab].company.site}
                 target="_blank"
               >
                 {PROFESSIONAL_EXPERIENCES[selectedTab].company.name}
               </a>
-            </span>
+            </span> */}
+            <StyledLink
+              name={PROFESSIONAL_EXPERIENCES[selectedTab].company.name}
+              target="_blank"
+              url={PROFESSIONAL_EXPERIENCES[selectedTab].company.site}
+            />
           </h3>
           <p className="mb-6 text-sm text-primary-text-navy-navy">
             {PROFESSIONAL_EXPERIENCES[selectedTab].date.in} -{" "}

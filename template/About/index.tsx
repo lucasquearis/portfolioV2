@@ -1,5 +1,6 @@
 import Image from "next/image";
 import StyledLi from "../../components/StyledLi";
+import StyledLink from "../../components/StyledLink";
 import TitleSection from "../../components/TitleSection";
 import { RECENTS_TOOLS } from "../../constants";
 import perfil from "../../public/assets/images/perfil.jpeg";
@@ -35,11 +36,18 @@ export default function About() {
             <p className="mb-2 text-primary-text-navy-navy">
               Hoje depois de 12 anos, tive a grande oportunidade de retomar os
               estudos na área de programação, estou cursando desenvolvimento web
-              na Trybe, uma escola que permite com que você estude e só pague a
-              partir do momento em que estiver empregado, estou iniciando uma
-              nova etapa da minha vida e correndo atrás do meu sonho, que é
-              impactar as pessoas através da tecnologia fazendo o que eu mais
-              amo.
+              na{" "}
+              {
+                <StyledLink
+                  name="Trybe"
+                  target="_blank"
+                  url="https://www.betrybe.com/"
+                />
+              }
+              , uma escola que permite com que você estude e só pague a partir
+              do momento em que estiver empregado, estou iniciando uma nova
+              etapa da minha vida e correndo atrás do meu sonho, que é impactar
+              as pessoas através da tecnologia fazendo o que eu mais amo.
             </p>
           </div>
           <ul className="mt-5 grid grid-cols-2 p-0 text-sm text-primary-text-navy-navy">
