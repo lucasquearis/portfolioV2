@@ -15,7 +15,7 @@ export default function Work() {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
-    <section id="experience" className="py-14">
+    <section id="experience" className="mx-auto max-w-4xl py-14 ">
       <TitleSection number="before:content-['02.']">
         Where I've Worked
       </TitleSection>

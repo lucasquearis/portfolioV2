@@ -2,7 +2,7 @@ import { Slide } from "react-animated-components";
 
 export default function Welcome() {
   return (
-    <section className="flex min-h-screen flex-col items-start justify-center gap-3 p-0">
+    <section className="mx-auto flex min-h-screen max-w-5xl flex-col items-start justify-center gap-3 p-0">
       <Slide fade up delayMs={1000} durationMs={300}>
         <p className="font-mono text-lg text-primary-text-primary">
           Hi, my name is
