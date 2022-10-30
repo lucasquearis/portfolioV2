@@ -49,6 +49,70 @@ export const PROFESSIONAL_EXPERIENCES = [
     },
     office: "Front-end Developer",
   },
+  {
+    company: {
+      name: "Uber",
+      site: "https://www.uber.com/br/pt-br/",
+    },
+    about: [
+      "Lorem",
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
+      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+    ],
+    date: {
+      in: "Set - 2019",
+      out: "Set - 2021",
+    },
+    office: "Driver",
+  },
+  {
+    company: {
+      name: "Perfecto Services",
+      site: "https://www.perfectolimpeza.com.br/",
+    },
+    about: [
+      "Lorem",
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
+      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+    ],
+    date: {
+      in: "Aug - 2017",
+      out: "Set - 2019",
+    },
+    office: "Administration",
+  },
+  {
+    company: {
+      name: "Oi",
+      site: "https://www.oi.com.br/",
+    },
+    about: [
+      "Lorem",
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
+      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+    ],
+    date: {
+      in: "Mar - 2017",
+      out: "Jun - 2017",
+    },
+    office: "Telemarketing",
+  },
+  {
+    company: {
+      name: "Tropical Banana",
+      site: "https://tropicalbanana.com.br/",
+    },
+    about: [
+      "Lorem",
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
+      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+    ],
+    date: {
+      in: "Jan - 2013",
+      out: "May - 2013",
+    },
+    office: "Attendance",
+  },
 ];
 
 export const PROJECTS = [
