@@ -9,7 +9,7 @@ export default function About() {
     <section id="about" className="mx-auto max-w-4xl py-14">
       <TitleSection number="before:content-['01.']">About Me</TitleSection>
       <div className="md:flex md:gap-12">
-        <div className="md:w-2/4">
+        <div className="md:w-3/5">
           <div className="text-lg">
             <p className="mb-2 text-primary-text-navy-navy">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
