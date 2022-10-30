@@ -7,7 +7,7 @@ import Contact from "../template/Contact";
 
 const Home: NextPage = () => {
   return (
-    <main className="bg-primary-background-primary p-6 md:p-0 md:px-36">
+    <main className="bg-primary-background-primary p-12 md:p-0 md:px-28 lg:md:px-36">
       <Welcome />
       <About />
       <Work />
