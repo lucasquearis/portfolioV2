@@ -53,3 +53,7 @@
   background: #495670;
   border-radius: 10px;
 }
+
+.email {
+  writing-mode: vertical-rl;
+}
