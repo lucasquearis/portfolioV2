@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { HEADER_OPTIONS } from "../../constants";
+import { Fade } from "react-awesome-reveal";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,27 +38,31 @@ export default function Header() {
             <h1 className="overflow-hidden text-5xl text-primary-text-primary shadow">
               L
             </h1>
-            <ul className="hidden items-center md:flex md:gap-8">
-              {HEADER_OPTIONS.map(({ key, word, anchor }) => (
-                <li className="flex" key={key}>
-                  <div className="text-center md:flex">
-                    <p className="font-mono text-primary-text-primary">{key}</p>
-                    <a href={anchor}>
-                      <span className="font-mono text-primary-text-navy-light transition-all hover:text-primary-text-primary">
-                        {word}
-                      </span>
-                    </a>
+            <Fade cascade damping={0.2}>
+              <ul className="hidden items-center md:flex md:gap-8">
+                {HEADER_OPTIONS.map(({ key, word, anchor }) => (
+                  <li className="flex" key={key}>
+                    <div className="text-center md:flex">
+                      <p className="font-mono text-primary-text-primary">
+                        {key}
+                      </p>
+                      <a href={anchor}>
+                        <span className="font-mono text-primary-text-navy-light transition-all hover:text-primary-text-primary">
+                          {word}
+                        </span>
+                      </a>
+                    </div>
+                  </li>
+                ))}
+                <li className="hidden md:flex">
+                  <div className="text-center text-primary-text-primary md:flex">
+                    <button className="rounded-md border-[1px] border-primary-text-primary px-3 py-1 font-mono transition-colors hover:bg-primary-text-opacity">
+                      Resume
+                    </button>
                   </div>
                 </li>
-              ))}
-              <li className="hidden md:flex">
-                <div className="text-center text-primary-text-primary md:flex">
-                  <button className="rounded-md border-[1px] border-primary-text-primary px-3 py-1 font-mono transition-colors hover:bg-primary-text-opacity">
-                    Resume
-                  </button>
-                </div>
-              </li>
-            </ul>
+              </ul>
+            </Fade>
             <button
               className={`hamburger before:bg-primary-text-primary after:bg-primary-text-primary md:hidden ${
                 menuOpen
