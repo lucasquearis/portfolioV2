@@ -2,7 +2,10 @@ import TitleSection from "../../components/TitleSection";
 
 export default function Contact() {
   return (
-    <section id="contact" className="h-[80vh] w-full py-14 pb-32">
+    <section
+      id="contact"
+      className="mx-auto h-[80vh] w-full max-w-2xl py-14 pb-32"
+    >
       <TitleSection number="before:content-['04.']">What's Next?</TitleSection>
       <div className="flex h-full flex-col items-center justify-center gap-8 text-center">
         <h2 className="text-4xl font-semibold text-primary-text-navy-light">
