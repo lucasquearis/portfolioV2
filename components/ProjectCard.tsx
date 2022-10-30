@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import Link from "next/link";
 import GithubIcon from "./GithubIcon";
 import GoToIcon from "./GoToIcon";
 import StyledLi from "./StyledLi";
@@ -64,14 +65,16 @@ export default function ProjectCard({
       </div>
       {/* DESKTOP */}
       <div className="relative my-10 hidden md:flex">
-        <div
-          className={`relative inset-0 h-[400px] w-[600px] ${
+        <a
+          className={`relative inset-0 h-[400px] w-[600px] cursor-pointer ${
             index % 2 == 0 ? "order-2" : "order-1"
           }`}
+          href={projectUrl}
+          target="_blank"
         >
           {image}
           <div className="absolute h-full w-full bg-primary-text-primary opacity-30 transition-opacity duration-300 hover:opacity-0" />
-        </div>
+        </a>
         {/* div vazia para efeito */}
         <div
           className={`h-max w-2/5 max-w-lg self-center p-5 ${
