@@ -9,12 +9,12 @@ export default function Welcome() {
         </p>
       </Slide>
       <Slide fade up delayMs={1200} durationMs={600}>
-        <h2 className="text-4xl font-bold text-primary-text-navy-light md:text-7xl">
+        <h2 className="text-4xl font-bold text-primary-text-navy-light md:text-6xl lg:text-7xl">
           Lucas A. Santos.
         </h2>
       </Slide>
       <Slide fade up delayMs={1400} durationMs={1000}>
-        <h3 className="text-4xl font-bold text-primary-text-navy-navy md:text-7xl">
+        <h3 className="text-4xl font-bold text-primary-text-navy-navy md:text-6xl lg:text-7xl">
           I'm Front-end Developer
         </h3>
       </Slide>

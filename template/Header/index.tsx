@@ -33,10 +33,8 @@ export default function Header() {
           <nav className="px-6 text-white md:px-12">
             <div
               className={`${menuOpen ? "iconActive" : ""} ${
-                showMobileMenu
-                  ? "visible h-16 overflow-auto"
-                  : "invisible h-0 overflow-hidden"
-              } flex items-center justify-between transition-all duration-150`}
+                showMobileMenu ? "visible h-16" : "invisible h-0"
+              } flex items-center justify-between overflow-hidden transition-all duration-150`}
             >
               <h1 className="overflow-hidden text-5xl text-primary-text-primary shadow">
                 L
