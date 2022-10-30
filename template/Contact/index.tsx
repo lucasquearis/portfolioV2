@@ -12,7 +12,7 @@ export default function Contact() {
           If you want to chat about programming, games, talk about the job
           market or just say hi, feel free, I'll try my best to answer you
         </p>
-        <button className="w-auto rounded-md border-2 border-primary-text-primary p-4 px-10 text-primary-text-primary">
+        <button className="w-auto rounded-md border-2 border-primary-text-primary p-4 px-10 text-primary-text-primary transition-colors hover:bg-primary-text-opacity">
           <a href="mailto:lucasquearis@hotmail.com" target="_blank">
             Say Hello
           </a>
