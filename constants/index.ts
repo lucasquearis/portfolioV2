@@ -39,9 +39,8 @@ export const PROFESSIONAL_EXPERIENCES = [
       site: "https://previdenciarista.com/",
     },
     about: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
-      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+      "My first and current job as a developer, I'm learning a lot here.",
+      "I learned to use Styled Components, to work with component library antd, storybook, Nextjs and TypeScript.",
     ],
     date: {
       in: "Feb - 2022",
@@ -55,9 +54,9 @@ export const PROFESSIONAL_EXPERIENCES = [
       site: "https://www.uber.com/br/pt-br/",
     },
     about: [
-      "Lorem",
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
-      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+      "I worked as an Uber driver, a job that helped me a lot.",
+      "I met a lot of nice people, which helped me to improve my communication a lot.",
+      "I learned to set goals, respect schedules and perfected my skills as a driver",
     ],
     date: {
       in: "Set - 2019",
@@ -71,9 +70,8 @@ export const PROFESSIONAL_EXPERIENCES = [
       site: "https://www.perfectolimpeza.com.br/",
     },
     about: [
-      "Lorem",
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
-      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+      "A cleaning services company founded by my father and uncle in partnership, family business",
+      "I worked in the administration of the teams, payments of employees, taking and picking up all the personnel, managing works",
     ],
     date: {
       in: "Aug - 2017",
@@ -87,9 +85,8 @@ export const PROFESSIONAL_EXPERIENCES = [
       site: "https://www.oi.com.br/",
     },
     about: [
-      "Lorem",
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
-      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+      "I worked as a telemarketer in the customer retention sector.",
+      "First contact with linux, I learned about commands to be able to manipulate the system.",
     ],
     date: {
       in: "Mar - 2017",
@@ -103,9 +100,9 @@ export const PROFESSIONAL_EXPERIENCES = [
       site: "https://tropicalbanana.com.br/",
     },
     about: [
-      "Lorem",
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
-      "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections",
+      "My first job, when I was in high school.",
+      "I learned a lot, I learned to be responsible with customers, commitment to schedule.",
+      "In the second month, I received a certificate of prominence of the month for my commitment to the company and quality of service.",
     ],
     date: {
       in: "Jan - 2013",
@@ -130,7 +127,7 @@ export const PROJECTS = [
       "React Router DOM",
       "Vercel Deploy",
     ],
-    imagePath: "/assets/images/bg-rpg.gif",
+    imagePath: "/assets/images/freeToPlayGames.png",
   },
   {
     name: "My first Portfólio",

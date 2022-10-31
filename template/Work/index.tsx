@@ -23,7 +23,7 @@ export default function Work() {
           Where I've Worked
         </TitleSection>
         <div className="md:flex md:min-h-[400px]">
-          <ul className="scrollExperiences relative flex w-full overflow-x-auto md:w-auto md:flex-col md:overflow-x-visible">
+          <ul className="relative flex w-full overflow-x-auto md:w-auto md:flex-col md:overflow-x-visible">
             {PROFESSIONAL_EXPERIENCES.map(({ company: { name } }, index) => (
               <li
                 key={index}

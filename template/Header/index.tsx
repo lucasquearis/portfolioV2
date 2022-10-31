@@ -42,22 +42,24 @@ export default function Header() {
               <ul className="hidden items-center md:flex md:gap-8">
                 {HEADER_OPTIONS.map(({ key, word, anchor }) => (
                   <li className="flex" key={key}>
-                    <div className="text-center md:flex">
-                      <p className="font-mono text-primary-text-primary">
-                        {key}
-                      </p>
-                      <a href={anchor}>
+                    <a href={anchor}>
+                      <div className="text-center md:flex">
+                        <p className="font-mono text-primary-text-primary">
+                          {key}
+                        </p>
                         <span className="font-mono text-primary-text-navy-light transition-all hover:text-primary-text-primary">
                           {word}
                         </span>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </li>
                 ))}
                 <li className="hidden md:flex">
                   <div className="text-center text-primary-text-primary md:flex">
                     <button className="rounded-md border-[1px] border-primary-text-primary px-3 py-1 font-mono transition-colors hover:bg-primary-text-opacity">
-                      Resume
+                      <a href="/assets/curriculo.pdf" target="_blank">
+                        Resume
+                      </a>
                     </button>
                   </div>
                 </li>
@@ -90,6 +92,15 @@ export default function Header() {
                   </div>
                 </li>
               ))}
+              <li className="flex">
+                <div className="text-center text-primary-text-primary md:flex">
+                  <button className="rounded-md border-[1px] border-primary-text-primary px-3 py-1 font-mono transition-colors hover:bg-primary-text-opacity">
+                    <a href="/assets/curriculo.pdf" target="_blank">
+                      Resume
+                    </a>
+                  </button>
+                </div>
+              </li>
             </ul>
           </div>
         </nav>
@@ -99,7 +110,7 @@ export default function Header() {
         className={`fixed inset-0 z-10 backdrop-blur-sm ${
           menuOpen ? "visible h-screen w-[30%]" : "invisible h-0 w-0"
         } duration-700 ease-in-out`}
-      ></div>
+      />
     </>
   );
 }
