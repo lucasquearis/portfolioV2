@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-import Link from "next/link";
 import GithubIcon from "./GithubIcon";
 import GoToIcon from "./GoToIcon";
 import StyledLi from "./StyledLi";

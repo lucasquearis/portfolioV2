@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { HEADER_OPTIONS } from "../../constants";
 import { Fade } from "react-awesome-reveal";
+import SelectLanguage from "../../components/SelectLanguage";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,6 +63,9 @@ export default function Header() {
                       </a>
                     </button>
                   </div>
+                </li>
+                <li>
+                  <SelectLanguage />
                 </li>
               </ul>
             </Fade>
