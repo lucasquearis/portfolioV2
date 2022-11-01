@@ -1,26 +1,39 @@
-import { createContext, ReactNode, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  useState,
+  Dispatch,
+  SetStateAction,
+} from "react";
 
 interface ILangguageProvider {
   children: ReactNode;
 }
 
+export enum LanguageEnum {
+  PORTUGUESE = "portuguese",
+  ENGLISH = "english",
+}
+
 interface LanguageContextType {
-  language: string;
-  setLanguage: (newState: string) => void;
+  selectedLanguage: LanguageEnum;
+  setSelectedLanguage: Dispatch<SetStateAction<LanguageEnum>>;
 }
 
 const initialValue = {
-  language: "english",
-  setLanguage: () => {},
+  selectedLanguage: LanguageEnum.ENGLISH,
+  setSelectedLanguage: () => {},
 };
 
 export const LanguageContext = createContext<LanguageContextType>(initialValue);
 
 export default function LanguageProvider({ children }: ILangguageProvider) {
-  const [language, setLanguage] = useState("english");
+  const [selectedLanguage, setSelectedLanguage] = useState<LanguageEnum>(
+    LanguageEnum.ENGLISH
+  );
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext.Provider value={{ selectedLanguage, setSelectedLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

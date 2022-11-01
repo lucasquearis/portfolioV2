@@ -1,23 +1,25 @@
-import { useContext, useEffect, useState } from "react";
-import { LanguageContext } from "../context/LanguageProvider";
+import { useContext } from "react";
+import { LanguageContext, LanguageEnum } from "../context/LanguageProvider";
 
 export default function SelectLanguage() {
-  const { language, setLanguage } = useContext(LanguageContext);
+  const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext);
 
   return (
     <select
-      value={language}
+      value={selectedLanguage}
       className="block w-max rounded-lg bg-transparent p-1.5 text-sm text-primary-text-navy-light outline-none"
-      onChange={(event) => setLanguage(event.target.value)}
+      onChange={(event) =>
+        setSelectedLanguage(event.target.value as LanguageEnum)
+      }
     >
       <option
-        value="portuguese"
+        value={LanguageEnum.PORTUGUESE}
         className="bg-primary-background-border text-primary-text-navy-light"
       >
         Portuguese
       </option>
       <option
-        value="english"
+        value={LanguageEnum.ENGLISH}
         className="bg-primary-background-border text-primary-text-navy-light"
       >
         English
