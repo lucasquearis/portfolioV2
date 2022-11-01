@@ -5,53 +5,47 @@ import TitleSection from "../../components/TitleSection";
 import { RECENTS_TOOLS } from "../../constants";
 import perfil from "../../public/assets/images/perfil.jpeg";
 import { Fade } from "react-awesome-reveal";
+import { LANGUAGES } from "../../constants/language";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export default function About() {
+  const { selectedLanguage } = useContext(LanguageContext);
   return (
     <Fade delay={500} triggerOnce>
       <section id="about" className="mx-auto max-w-4xl py-14">
-        <TitleSection number="before:content-['01.']">About Me</TitleSection>
+        <TitleSection number="before:content-['01.']">
+          {LANGUAGES[selectedLanguage].about.titleSection}
+        </TitleSection>
         <div className="md:flex md:gap-12">
           <div className="md:w-3/5">
             <div className="text-lg">
-              <p className="mb-2 text-primary-text-navy-navy">
-                Sempre fui apaixonado por jogos, isso despertou minha
-                curiosidade para entender como isso funciona, como tudo é
-                desenvolvido, como cada comando de controle e tela funcionam,
-                graças a esse sentimento, me encontrei na área da tecnologia e
-                hoje posso dizer que sou um programador.
-              </p>
-              <p className="mb-2 text-primary-text-navy-navy">
-                Meu primeiro contato com programação foi justamente me
-                questionando como os jogos funcionam, com 14 anos de idade em
-                parceria com meu melhor amigo até hoje, abri meu primeiro
-                servidor do meu jogo favorito, foi uma experiência incrível para
-                nós nessa idade, tivemos que investir muito tempo e um pouco de
-                dinheiro para fazer tudo funcionar, mas apesar de todas as
-                dificuldades, conseguimos. A medida que o servidor ganhava mais
-                proporções mais difícil era manter, pessoas mal intencionadas
-                começaram a atacar (DDOS) nosso servidor, nos fazendo desanimar
-                e desistir da ideia de mantê-lo funcionando, não tínhamos
-                capital para acionar um serviço de segurança de rede, o que
-                dificultou de continuarmos nossos planos.
-              </p>
-              <p className="mb-2 text-primary-text-navy-navy">
-                Hoje depois de 12 anos, tive a grande oportunidade de retomar os
-                estudos na área de programação, estou cursando desenvolvimento
-                web na{" "}
-                {
-                  <StyledLink
-                    name="Trybe"
-                    target="_blank"
-                    url="https://www.betrybe.com/"
-                  />
+              {LANGUAGES[selectedLanguage].about.paragraphs.map(
+                (paragraph, index) => {
+                  if (index == 3) {
+                    return;
+                  }
+                  return (
+                    <p key={index} className="mb-2 text-primary-text-navy-navy">
+                      {paragraph}
+                      {index == 2 && (
+                        <>
+                          <StyledLink
+                            name="Trybe"
+                            target="_blank"
+                            url="https://www.betrybe.com/"
+                          />
+                          {
+                            LANGUAGES[selectedLanguage].about.paragraphs[
+                              index + 1
+                            ]
+                          }
+                        </>
+                      )}
+                    </p>
+                  );
                 }
-                , uma escola que permite com que você estude e só pague a partir
-                do momento em que estiver empregado, estou iniciando uma nova
-                etapa da minha vida e correndo atrás do meu sonho, que é
-                impactar as pessoas através da tecnologia fazendo o que eu mais
-                amo.
-              </p>
+              )}
             </div>
             <ul className="mt-5 grid grid-cols-2 p-0 text-sm text-primary-text-navy-navy">
               {RECENTS_TOOLS.map((tool) => (
@@ -64,6 +58,7 @@ export default function About() {
               className="rounded opacity-75 transition-all duration-700 hover:opacity-100"
               src={perfil}
               layout="fill"
+              objectFit="cover"
             />
           </div>
         </div>

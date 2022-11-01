@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
-import { HEADER_OPTIONS } from "../../constants";
+import { useContext, useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import SelectLanguage from "../../components/SelectLanguage";
+import { LANGUAGES } from "../../constants/language";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export default function Header() {
+  const { selectedLanguage } = useContext(LanguageContext);
   const [menuOpen, setMenuOpen] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(true);
 
@@ -40,26 +43,33 @@ export default function Header() {
             </h1>
             <Fade cascade damping={0.2}>
               <ul className="hidden items-center md:flex md:gap-8">
-                {HEADER_OPTIONS.map(({ key, word, anchor }) => (
-                  <li className="flex" key={key}>
-                    <div className="text-center md:flex">
-                      <p className="font-mono text-primary-text-primary">
-                        {key}
-                      </p>
+                {LANGUAGES[selectedLanguage].header.map(
+                  ({ key, word, anchor }) => (
+                    <li className="flex" key={key}>
                       <a href={anchor}>
-                        <span className="font-mono text-primary-text-navy-light transition-all hover:text-primary-text-primary">
-                          {word}
-                        </span>
+                        <div className="text-center md:flex">
+                          <p className="font-mono text-primary-text-primary">
+                            {key}
+                          </p>
+                          <span className="font-mono text-primary-text-navy-light transition-all hover:text-primary-text-primary">
+                            {word}
+                          </span>
+                        </div>
                       </a>
-                    </div>
-                  </li>
-                ))}
+                    </li>
+                  )
+                )}
                 <li className="hidden md:flex">
                   <div className="text-center text-primary-text-primary md:flex">
                     <button className="rounded-md border-[1px] border-primary-text-primary px-3 py-1 font-mono transition-colors hover:bg-primary-text-opacity">
-                      Resume
+                      <a href="/assets/curriculo.pdf" target="_blank">
+                        Resume
+                      </a>
                     </button>
                   </div>
+                </li>
+                <li>
+                  <SelectLanguage />
                 </li>
               </ul>
             </Fade>
@@ -78,18 +88,34 @@ export default function Header() {
             } fixed right-0 top-0 h-screen bg-primary-background-secondary shadow-xl duration-700 ease-in-out md:hidden`}
           >
             <ul className="mt-28 flex w-full flex-col items-center justify-center gap-5 overflow-x-hidden p-4">
-              {HEADER_OPTIONS.map(({ key, word, anchor }) => (
-                <li key={key}>
-                  <div className="text-center">
-                    <p className="font-mono text-primary-text-primary">{key}</p>
-                    <a href={anchor}>
-                      <span className="font-mono text-primary-text-navy-light transition-all hover:text-primary-text-primary">
-                        {word}
-                      </span>
+              {LANGUAGES[selectedLanguage].header.map(
+                ({ key, word, anchor }) => (
+                  <li key={key}>
+                    <div className="text-center">
+                      <p className="font-mono text-primary-text-primary">
+                        {key}
+                      </p>
+                      <a href={anchor}>
+                        <span className="font-mono text-primary-text-navy-light transition-all hover:text-primary-text-primary">
+                          {word}
+                        </span>
+                      </a>
+                    </div>
+                  </li>
+                )
+              )}
+              <li className="flex">
+                <div className="text-center text-primary-text-primary md:flex">
+                  <button className="rounded-md border-[1px] border-primary-text-primary px-3 py-1 font-mono transition-colors hover:bg-primary-text-opacity">
+                    <a href="/assets/curriculo.pdf" target="_blank">
+                      Resume
                     </a>
-                  </div>
-                </li>
-              ))}
+                  </button>
+                </div>
+              </li>
+              <li>
+                <SelectLanguage />
+              </li>
             </ul>
           </div>
         </nav>
@@ -99,7 +125,7 @@ export default function Header() {
         className={`fixed inset-0 z-10 backdrop-blur-sm ${
           menuOpen ? "visible h-screen w-[30%]" : "invisible h-0 w-0"
         } duration-700 ease-in-out`}
-      ></div>
+      />
     </>
   );
 }

@@ -1,17 +1,20 @@
 import Image from "next/image";
 import ProjectCard from "../../components/ProjectCard";
 import TitleSection from "../../components/TitleSection";
-import { PROJECTS } from "../../constants";
 import { Fade } from "react-awesome-reveal";
+import { LANGUAGES } from "../../constants/language";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export default function Projects() {
+  const { selectedLanguage } = useContext(LanguageContext);
   return (
     <Fade delay={500} triggerOnce>
       <section id="work" className="mx-auto max-w-5xl py-14">
         <TitleSection number="before:content-['03.']">
-          Some things I've built
+          {LANGUAGES[selectedLanguage].project.titleSection}
         </TitleSection>
-        {PROJECTS.map(
+        {LANGUAGES[selectedLanguage].project.projects.map(
           (
             { name, url, description, githubUrl, imagePath, technologies },
             index
@@ -24,7 +27,14 @@ export default function Projects() {
               projectDescription={description}
               projectTechnologies={technologies}
               index={index}
-              image={<Image src={imagePath} alt={name} layout="fill" />}
+              image={
+                <Image
+                  src={imagePath}
+                  alt={name}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              }
             />
           )
         )}

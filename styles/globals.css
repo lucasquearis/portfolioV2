@@ -43,13 +43,14 @@
   border-radius: 23%;
 }
 
-/* width */
-.scrollExperiences::-webkit-scrollbar {
+::-webkit-scrollbar {
+  width: 10px;
   height: 8px;
 }
-
-/* Handle */
-.scrollExperiences::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track {
+  background: #243247;
+}
+::-webkit-scrollbar-thumb {
   background: #495670;
   border-radius: 10px;
 }
