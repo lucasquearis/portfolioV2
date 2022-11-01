@@ -14,7 +14,9 @@ export default function About() {
   return (
     <Fade delay={500} triggerOnce>
       <section id="about" className="mx-auto max-w-4xl py-14">
-        <TitleSection number="before:content-['01.']">About Me</TitleSection>
+        <TitleSection number="before:content-['01.']">
+          {LANGUAGES[selectedLanguage].about.titleSection}
+        </TitleSection>
         <div className="md:flex md:gap-12">
           <div className="md:w-3/5">
             <div className="text-lg">
@@ -24,7 +26,7 @@ export default function About() {
                     return;
                   }
                   return (
-                    <p className="mb-2 text-primary-text-navy-navy">
+                    <p key={index} className="mb-2 text-primary-text-navy-navy">
                       {paragraph}
                       {index == 2 && (
                         <>

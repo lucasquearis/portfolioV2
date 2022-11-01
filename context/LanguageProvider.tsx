@@ -4,6 +4,7 @@ import {
   useState,
   Dispatch,
   SetStateAction,
+  useEffect,
 } from "react";
 
 interface ILangguageProvider {
@@ -31,6 +32,12 @@ export default function LanguageProvider({ children }: ILangguageProvider) {
   const [selectedLanguage, setSelectedLanguage] = useState<LanguageEnum>(
     LanguageEnum.ENGLISH
   );
+
+  useEffect(() => {
+    const userLangauge = require("detect-browser-language");
+    userLangauge().toLowerCase() == "pt-br" &&
+      setSelectedLanguage(LanguageEnum.PORTUGUESE);
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ selectedLanguage, setSelectedLanguage }}>

@@ -34,7 +34,7 @@ export default function Welcome() {
         </p>
         <button className="w-full rounded-md border-2 border-primary-text-primary p-4 font-mono text-primary-text-primary transition-colors hover:bg-primary-text-opacity md:w-auto">
           <a href="/assets/curriculo.pdf" target="_blank">
-            See my Resume (CV)!
+            {LANGUAGES[selectedLanguage].welcome.resumeButton}
           </a>
         </button>
       </Fade>
