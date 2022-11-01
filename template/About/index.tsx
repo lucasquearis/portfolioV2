@@ -58,6 +58,7 @@ export default function About() {
               className="rounded opacity-75 transition-all duration-700 hover:opacity-100"
               src={perfil}
               layout="fill"
+              objectFit="cover"
             />
           </div>
         </div>

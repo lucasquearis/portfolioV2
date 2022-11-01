@@ -27,7 +27,14 @@ export default function Projects() {
               projectDescription={description}
               projectTechnologies={technologies}
               index={index}
-              image={<Image src={imagePath} alt={name} layout="fill" />}
+              image={
+                <Image
+                  src={imagePath}
+                  alt={name}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              }
             />
           )
         )}

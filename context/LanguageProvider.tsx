@@ -35,8 +35,7 @@ export default function LanguageProvider({ children }: ILangguageProvider) {
 
   useEffect(() => {
     const userLangauge = require("detect-browser-language");
-    userLangauge().toLowerCase() == "pt-br" &&
-      setSelectedLanguage(LanguageEnum.PORTUGUESE);
+    userLangauge() == "pt-BR" && setSelectedLanguage(LanguageEnum.PORTUGUESE);
   }, []);
 
   return (
