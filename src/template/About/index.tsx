@@ -3,7 +3,7 @@ import StyledLi from "../../components/StyledLi";
 import StyledLink from "../../components/StyledLink";
 import TitleSection from "../../components/TitleSection";
 import { RECENTS_TOOLS } from "../../constants";
-import perfil from "../../public/assets/images/perfil.jpeg";
+import perfil from "../../../public/assets/images/perfil.jpeg";
 import { Fade } from "react-awesome-reveal";
 import { LANGUAGES } from "../../constants/language";
 import { useContext } from "react";
@@ -59,6 +59,8 @@ export default function About() {
               src={perfil}
               layout="fill"
               objectFit="cover"
+              alt="Lucas A. Santos"
+              title="Lucas A. Santos"
             />
           </div>
         </div>
