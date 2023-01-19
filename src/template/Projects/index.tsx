@@ -31,6 +31,7 @@ export default function Projects() {
                 <Image
                   src={imagePath}
                   alt={name}
+                  title={name}
                   layout="fill"
                   objectFit="cover"
                 />
