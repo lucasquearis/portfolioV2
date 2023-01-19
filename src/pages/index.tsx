@@ -15,8 +15,9 @@ const Home: NextPage = () => {
         canonical="https://www.canonical.ie/"
         openGraph={{
           url: "https://lucasquearis.vercel.app/",
-          title: "Open Graph Title",
-          description: "Open Graph Description",
+          title: "Portfólio Lucas A. Santos",
+          description:
+            "Esse é o meu portfólio, onde você encontrará informações sobre mim e meus trabalhos :)",
           images: [
             {
               url: "https://lucasquearis.vercel.app/assets/images/perfil.jpeg",
