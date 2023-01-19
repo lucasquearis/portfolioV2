@@ -52,6 +52,7 @@ const Home: NextPage = () => {
           "https://www.instagram.com/lucasquearis/",
           "https://www.linkedin.com/in/lucasquearis",
           "https://github.com/lucasquearis",
+          "https://www.youtube.com/@lucasquearis",
         ]}
       />
     </>
