@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { NextSeo } from "next-seo";
+import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import About from "../template/About";
 import Projects from "../template/Projects";
 import Welcome from "../template/Welcome";
@@ -44,6 +44,16 @@ const Home: NextPage = () => {
         <Projects />
         <Contact />
       </main>
+      <SocialProfileJsonLd
+        type="Person"
+        name="Lucas de Almeida Santos"
+        url="https://lucasquearis.vercel.app/"
+        sameAs={[
+          "https://www.instagram.com/lucasquearis/",
+          "https://www.linkedin.com/in/lucasquearis",
+          "https://github.com/lucasquearis",
+        ]}
+      />
     </>
   );
 };
