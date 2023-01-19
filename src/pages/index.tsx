@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <NextSeo
         title="Portfólio Lucas A. Santos"
         description="Esse é o meu portfólio, onde você encontrará informações sobre mim e meus trabalhos :)"
-        canonical="https://www.canonical.ie/"
+        canonical="https://lucasquearis.vercel.app/"
         openGraph={{
           url: "https://lucasquearis.vercel.app/",
           title: "Portfólio Lucas A. Santos",
