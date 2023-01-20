@@ -7,4 +7,3 @@ Host: https://lucasquearis.vercel.app/
 
 # Sitemaps
 Sitemap: https://lucasquearis.vercel.app/sitemap.xml
-Sitemap: https://lucasquearis.vercel.app/sitemap-0.xml

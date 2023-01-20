@@ -38,9 +38,9 @@ export default function Header() {
               showMobileMenu ? "visible h-16" : "invisible h-0"
             } flex items-center justify-between overflow-hidden transition-all duration-150`}
           >
-            <h1 className="overflow-hidden text-5xl text-primary-text-primary shadow">
+            <p className="overflow-hidden text-5xl text-primary-text-primary shadow">
               L
-            </h1>
+            </p>
             <Fade cascade damping={0.2}>
               <ul className="hidden items-center md:flex md:gap-8">
                 {LANGUAGES[selectedLanguage].header.map(
