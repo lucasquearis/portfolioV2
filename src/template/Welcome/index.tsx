@@ -15,9 +15,9 @@ export default function Welcome() {
         <h2 className="text-4xl font-bold text-primary-text-navy-light md:text-6xl lg:text-7xl">
           {LANGUAGES[selectedLanguage].welcome.name}
         </h2>
-        <h3 className="text-4xl font-bold text-primary-text-navy-navy md:text-6xl lg:text-7xl">
+        <h1 className="text-4xl font-bold text-primary-text-navy-navy md:text-6xl lg:text-7xl">
           {LANGUAGES[selectedLanguage].welcome.iam}
-        </h3>
+        </h1>
         <p className="mb-8 max-w-xl text-primary-text-navy-navy md:text-xl">
           {LANGUAGES[selectedLanguage].welcome.about[0]}{" "}
           <StyledLink
