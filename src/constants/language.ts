@@ -140,6 +140,30 @@ export const LANGUAGES = {
           technologies: ["Nextjs", "Tailwind", "Vercel Deploy"],
           imagePath: "/assets/images/portfolio.png",
         },
+        {
+          name: "Forever Baby Case",
+          url: "https://lucasquearis-forever-baby.netlify.app/",
+          githubUrl: "https://github.com/lucasquearis/forever-liss-case",
+          description:
+            "A project I did for a technical challenge for a front-end job, project done in 2 days fully responsive, a really cool challenge",
+          technologies: ["React", "Bootstrap", "Netlify Deploy"],
+          imagePath: "/assets/images/foreverBaby.png",
+        },
+        {
+          name: "Ar Motors",
+          url: "https://armotoparts-project.netlify.app/",
+          githubUrl: "https://github.com/lucasquearis/projeto-pessoal",
+          description:
+            "My first freelance job I learned a lot with this project, to manipulate the map and geolocation.",
+          technologies: [
+            "React",
+            "Mapbox-GL",
+            "antD",
+            "Styled Components",
+            "Netlify Deploy",
+          ],
+          imagePath: "/assets/images/arMotors.png",
+        },
       ],
     },
     contact: {
@@ -310,6 +334,30 @@ export const LANGUAGES = {
             "Esse foi meu segundo e último portfólio até agora, resolvi fazer no Nextjs e Tailwind para aprender novas tecnologias",
           technologies: ["Nextjs", "Tailwind", "Vercel Deploy"],
           imagePath: "/assets/images/portfolio.png",
+        },
+        {
+          name: "Forever Baby Case",
+          url: "https://lucasquearis-forever-baby.netlify.app/",
+          githubUrl: "https://github.com/lucasquearis/forever-liss-case",
+          description:
+            "Um projeto que eu fiz para um desafio técnico para vaga de front-end, projeto feito em 2 dias totalmente responsivo, um desafio muito legal",
+          technologies: ["React", "Bootstrap", "Netlify Deploy"],
+          imagePath: "/assets/images/foreverBaby.png",
+        },
+        {
+          name: "Ar Motors",
+          url: "https://armotoparts-project.netlify.app/",
+          githubUrl: "https://github.com/lucasquearis/projeto-pessoal",
+          description:
+            "Meu primeiro job free-lancer aprendi bastante com esse projeto, a manipular o mapa e geolocalização.",
+          technologies: [
+            "React",
+            "Mapbox-GL",
+            "antD",
+            "Styled Components",
+            "Netlify Deploy",
+          ],
+          imagePath: "/assets/images/arMotors.png",
         },
       ],
     },
