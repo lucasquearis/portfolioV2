@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://lucasquearis.vercel.app/
+Host: https://www.lucasquearis.com.br/
 
 # Sitemaps
-Sitemap: https://lucasquearis.vercel.app/sitemap.xml
+Sitemap: https://www.lucasquearis.com.br/sitemap.xml
