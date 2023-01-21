@@ -13,15 +13,15 @@ const Home: NextPage = () => {
       <NextSeo
         title="Portfólio Lucas A. Santos"
         description="Esse é o meu portfólio, onde você encontrará informações sobre mim e meus trabalhos :)"
-        canonical="https://lucasquearis.vercel.app/"
+        canonical="https://www.lucasquearis.com.br/"
         openGraph={{
-          url: "https://lucasquearis.vercel.app/",
+          url: "https://www.lucasquearis.com.br/",
           title: "Portfólio Lucas A. Santos",
           description:
             "Esse é o meu portfólio, onde você encontrará informações sobre mim e meus trabalhos :)",
           images: [
             {
-              url: "https://lucasquearis.vercel.app/assets/images/perfil.jpeg",
+              url: "https://www.lucasquearis.com.br/assets/images/perfil.jpeg",
               width: 500,
               height: 500,
               alt: "Lucas A. Santos",
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
       <SocialProfileJsonLd
         type="Person"
         name="Lucas de Almeida Santos"
-        url="https://lucasquearis.vercel.app/"
+        url="https://www.lucasquearis.com.br/"
         sameAs={[
           "https://www.instagram.com/lucasquearis/",
           "https://www.linkedin.com/in/lucasquearis",

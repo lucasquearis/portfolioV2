@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import SelectLanguage from "../../components/SelectLanguage";
 import { LANGUAGES } from "../../constants/language";
-import { LanguageContext } from "../../context/LanguageProvider";
+import { LanguageContext, LanguageEnum } from "../../context/LanguageProvider";
 
 export default function Header() {
   const { selectedLanguage } = useContext(LanguageContext);
@@ -63,7 +63,9 @@ export default function Header() {
                   <div className="text-center text-primary-text-primary md:flex">
                     <button className="rounded-md border-[1px] border-primary-text-primary px-3 py-1 font-mono transition-colors hover:bg-primary-text-opacity">
                       <a href="/assets/curriculo.pdf" target="_blank">
-                        Resume
+                        {selectedLanguage === LanguageEnum.ENGLISH
+                          ? "Resume"
+                          : "Currículo"}
                       </a>
                     </button>
                   </div>
