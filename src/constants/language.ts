@@ -26,6 +26,21 @@ export const LANGUAGES = {
       works: [
         {
           company: {
+            name: "Coopercarga",
+            site: "https://www.coopercarga.com.br/",
+          },
+          about: [
+            "My first and current job as a full-stack developer, I'm learning a lot here.",
+            "I'm working with a new back-end tool called AdoniJS.",
+          ],
+          date: {
+            in: "Sep - 2023",
+            out: "Present",
+          },
+          office: "Full-stack Developer",
+        },
+        {
+          company: {
             name: "Previdenciarista",
             site: "https://previdenciarista.com/",
           },
@@ -35,71 +50,9 @@ export const LANGUAGES = {
           ],
           date: {
             in: "Feb - 2022",
-            out: "Present",
+            out: "Set - 2023",
           },
           office: "Front-end Developer",
-        },
-        {
-          company: {
-            name: "Uber",
-            site: "https://www.uber.com/br/pt-br/",
-          },
-          about: [
-            "I worked as an Uber driver, a job that helped me a lot.",
-            "I met a lot of nice people, which helped me to improve my communication a lot.",
-            "I learned to set goals, respect schedules and perfected my skills as a driver",
-          ],
-          date: {
-            in: "Set - 2019",
-            out: "Set - 2021",
-          },
-          office: "Driver",
-        },
-        {
-          company: {
-            name: "Perfecto Services",
-            site: "https://www.perfectolimpeza.com.br/",
-          },
-          about: [
-            "A cleaning services company founded by my father and uncle in partnership, family business",
-            "I worked in the administration of the teams, payments of employees, taking and picking up all the personnel, managing works",
-          ],
-          date: {
-            in: "Aug - 2017",
-            out: "Set - 2019",
-          },
-          office: "Administration",
-        },
-        {
-          company: {
-            name: "Oi",
-            site: "https://www.oi.com.br/",
-          },
-          about: [
-            "I worked as a telemarketer in the customer retention sector.",
-            "First contact with linux, I learned about commands to be able to manipulate the system.",
-          ],
-          date: {
-            in: "Mar - 2017",
-            out: "Jun - 2017",
-          },
-          office: "Telemarketing",
-        },
-        {
-          company: {
-            name: "Tropical Banana",
-            site: "https://tropicalbanana.com.br/",
-          },
-          about: [
-            "My first job, when I was in high school.",
-            "I learned a lot, I learned to be responsible with customers, commitment to schedule.",
-            "In the second month, I received a certificate of prominence of the month for my commitment to the company and quality of service.",
-          ],
-          date: {
-            in: "Jan - 2013",
-            out: "May - 2013",
-          },
-          office: "Attendance",
         },
       ],
     },
@@ -221,6 +174,21 @@ export const LANGUAGES = {
       works: [
         {
           company: {
+            name: "Coopercarga",
+            site: "https://www.coopercarga.com.br/",
+          },
+          about: [
+            "Meu primeiro e atual trabalho como desenvolvedor fullstack, estou aprendendo muito aqui.",
+            "Estou trabalhando com uma nova ferramenta no back-end chamada AdoniJS.",
+          ],
+          date: {
+            in: "Set - 2023",
+            out: "Atualmente",
+          },
+          office: "Desenvolvedor Full-stack",
+        },
+        {
+          company: {
             name: "Previdenciarista",
             site: "https://previdenciarista.com/",
           },
@@ -230,71 +198,9 @@ export const LANGUAGES = {
           ],
           date: {
             in: "Fev - 2022",
-            out: "Atualmente",
+            out: "Set - 2023",
           },
           office: "Desenvolvedor Front-end",
-        },
-        {
-          company: {
-            name: "Uber",
-            site: "https://www.uber.com/br/pt-br/",
-          },
-          about: [
-            "Trabalhei como motorista de Uber, um trabalho que me ajudou muito.",
-            "Conheci muita gente legal, o que me ajudou a melhorar muito minha comunicação.",
-            "Aprendi a estabelecer metas, respeitar horários e aperfeiçoar minhas habilidades como motorista",
-          ],
-          date: {
-            in: "Set - 2019",
-            out: "Set - 2021",
-          },
-          office: "Motorista",
-        },
-        {
-          company: {
-            name: "Perfecto Serviços",
-            site: "https://www.perfectolimpeza.com.br/",
-          },
-          about: [
-            "Uma empresa de serviços de limpeza fundada por meu pai e meu tio em parceria, empresa familiar",
-            "Trabalhei na administração das equipes, pagamentos de funcionários, levando e buscando todo o pessoal, gerenciando obras",
-          ],
-          date: {
-            in: "Ago - 2017",
-            out: "Set - 2019",
-          },
-          office: "Administração",
-        },
-        {
-          company: {
-            name: "Oi",
-            site: "https://www.oi.com.br/",
-          },
-          about: [
-            "Trabalhei como operador de telemarketing no setor de retenção de clientes.",
-            "Primeiro contato com o linux, aprendi sobre comandos para poder manipular o sistema.",
-          ],
-          date: {
-            in: "Mar - 2017",
-            out: "Jun - 2017",
-          },
-          office: "Telemarketing",
-        },
-        {
-          company: {
-            name: "Tropical Banana",
-            site: "https://tropicalbanana.com.br/",
-          },
-          about: [
-            "Meu primeiro emprego, quando estava no ensino médio.",
-            "Aprendi muito, aprendi a ser responsável com os clientes, compromisso com o horário.",
-            "No segundo mês, recebi um certificado de destaque do mês pelo meu comprometimento com a empresa e qualidade do atendimento.",
-          ],
-          date: {
-            in: "Jan - 2013",
-            out: "Mai - 2013",
-          },
-          office: "Atendimento",
         },
       ],
     },
