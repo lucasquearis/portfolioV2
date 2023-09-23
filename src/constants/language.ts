@@ -5,9 +5,9 @@ export const LANGUAGES = {
     welcome: {
       greetings: "Hi, my name is",
       name: "Lucas A. Santos.",
-      iam: "I'm Front-end Developer",
+      iam: "I'm Full Stack Developer",
       about: [
-        "I'm a junior full-stack developer formed by",
+        "I'm a full-stack developer formed by",
         "specializing in front-end development. I am currently studying Applied Artificial Intelligence at",
       ],
       resumeButton: "See my Resume",
@@ -153,9 +153,9 @@ export const LANGUAGES = {
     welcome: {
       greetings: "Olá, meu nome é",
       name: "Lucas A. Santos.",
-      iam: "Eu sou Desenvolvedor Front End",
+      iam: "Eu sou Desenvolvedor Full Stack",
       about: [
-        "Sou desenvolvedor full-stack junior formado pela",
+        "Sou desenvolvedor formado pela",
         "focado em desenvolvimento front-end. Eu estou atualmente estudando Inteligencia Artificial Aplicada na",
       ],
       resumeButton: "Veja meu currículo",
