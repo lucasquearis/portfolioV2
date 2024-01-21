@@ -11,13 +11,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Footer />
       <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-      {/* @ts-ignore */}
-      <df-messenger
-        intent="WELCOME"
-        chat-title="Limpexo Chatbot"
-        agent-id="66f841af-733e-4485-9d7a-b381a8350d4b"
-        language-code="pt-br"
-      />
     </LanguageProvider>
   );
 }
