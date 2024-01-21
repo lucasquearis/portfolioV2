@@ -81,7 +81,7 @@ export default function ProjectCard({
           }`}
         />
         <div
-          className={`absolute h-max w-full max-w-lg self-center p-5 ${
+          className={`absolute z-10 h-max w-full max-w-lg self-center p-5 ${
             index % 2 == 0
               ? "left-0 order-1 text-start"
               : "right-0 order-2 text-end"
