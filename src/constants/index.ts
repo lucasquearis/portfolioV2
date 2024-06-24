@@ -7,4 +7,7 @@ export const RECENTS_TOOLS = [
   "Single Spa",
   "TypeScript",
   "StoryBook",
+  "Adonis.js",
+  "Node",
+  "Prisma"
 ];

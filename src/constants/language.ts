@@ -15,10 +15,10 @@ export const LANGUAGES = {
     about: {
       titleSection: "About Me",
       paragraphs: [
-        "I've always been passionate about games, it awoke my curiosity to understand how it works, howeverything is developed, how each control command and screen works, thanks to this feeling, I found myself in the area of ​​technology and today I can say that I am a programmer.",
-        "My first contact with programming was just me questioning how games work, with a 14-year-old in partnership with my best friend until today, I opened my first my favorite game server, it was an amazing experience for us at that age, we had to invest a lot of time and a little money to make it all work, but despite all the difficulties, we made it. As the server gained more harder proportions was to maintain, malicious people started to attack (DDOS) our server, making us discouraged and give up the idea of ​​keeping it running, we had no capital to trigger a network security service, which made it difficult for us to continue our plans.",
-        "Today, after 12 years, I had the great opportunity to resume my studies in the programming area, I am studying development web on ",
-        ", a school that allows you to study and only pay from the moment I'm employed, I'm starting a new stage of my life and chasing my dream, which is impact people through technology doing what I most master.",
+        "Full Stack Developer with 3 years of experience and specialist in building complete and efficient web solutions.",
+        "Mainly working with JavaScript and its frameworks (ReactJS, NodeJS, ExpressJS, TypeScript, NextJS), ensuring application performance and scalability, as well as SQL and NoSQL databases, ORMs, and Query Builders.",
+        "Pursuing a degree in Applied Artificial Intelligence (PUC-PR) and specialized in Web Development (Trybe).",
+        "I apply the Continuous Learning methodology daily to improve my skills and knowledge to deliver the best results.",
       ],
     },
     work: {
@@ -30,8 +30,11 @@ export const LANGUAGES = {
             site: "https://www.coopercarga.com.br/",
           },
           about: [
-            "My first and current job as a full-stack developer, I'm learning a lot here.",
-            "I'm working with a new back-end tool called AdoniJS.",
+            "Developed important modules for the system, such as calculating minimum margin for load handling, load checklists, vehicles, and deliveries.",
+            "Updated the project's legacy React code to the latest version already in TypeScript.",
+            "Collaborated in project requirements analysis, helping to define tasks to avoid conflicts with other functionalities in the system and rework.",
+            "Developed and maintained web applications using TypeScript, JavaScript, React, Node.js, and the Adonis.js framework.",
+            "Implemented improvements for user experience and system security.",
           ],
           date: {
             in: "Sep - 2023",
@@ -45,8 +48,12 @@ export const LANGUAGES = {
             site: "https://previdenciarista.com/",
           },
           about: [
-            "My first and current job as a developer, I'm learning a lot here.",
-            "I learned to use Styled Components, to work with component library antd, storybook, Nextjs and TypeScript.",
+            "Responsible for migrating application components from JavaScript to TypeScript, ensuring greater code security and maintainability.",
+            "Refactored and improved the performance of legacy code, contributing to a better user experience.",
+            "Collaborated with the team designer to develop the Previdenciarista website and blog in Next.js, faithfully following the proposed layout and meticulously attending to every detail.",
+            "Studied and implemented micro-frontends using single-spa, improving the modularity and scalability of the application.",
+            "Responsible for the project's Design System, making changes and maintaining all React components of the site/blog as well as the main application.",
+            "Documented all system components in Storybook, creating an isolated environment for the creation and manipulation of components, facilitating their handling and maintenance.",
           ],
           date: {
             in: "Feb - 2022",
@@ -59,31 +66,6 @@ export const LANGUAGES = {
     project: {
       titleSection: "Some Things I've Built",
       projects: [
-        {
-          name: "Free to play games",
-          url: "https://free-to-play-project.vercel.app/",
-          githubUrl: "https://github.com/lucasquearis/free-to-play-project",
-          description:
-            "An application that offers you a variety of free games. For those moments of boredom or even to find a game to play",
-          technologies: [
-            "Reactjs",
-            "Context Api",
-            "Bootstrap",
-            "Free API",
-            "React Router DOM",
-            "Vercel Deploy",
-          ],
-          imagePath: "/assets/images/freeToPlayGames.png",
-        },
-        {
-          name: "My first Portfólio",
-          url: "https://lucasquearis.github.io/portfolio/",
-          githubUrl: "https://github.com/lucasquearis/portfolio",
-          description:
-            "This was my first portfolio, I finished it as soon as I finished the Front-end module on Trybe",
-          technologies: ["Reactjs", "Bootstrap", "Github Pages Deploy"],
-          imagePath: "/assets/images/portfolio_1.png",
-        },
         {
           name: "My second Portfólio",
           url: "#",
@@ -101,21 +83,6 @@ export const LANGUAGES = {
             "A project I did for a technical challenge for a front-end job, project done in 2 days fully responsive, a really cool challenge",
           technologies: ["React", "Bootstrap", "Netlify Deploy"],
           imagePath: "/assets/images/foreverBaby.png",
-        },
-        {
-          name: "Ar Motors",
-          url: "https://armotoparts-project.netlify.app/",
-          githubUrl: "https://github.com/lucasquearis/projeto-pessoal",
-          description:
-            "My first freelance job I learned a lot with this project, to manipulate the map and geolocation.",
-          technologies: [
-            "React",
-            "Mapbox-GL",
-            "antD",
-            "Styled Components",
-            "Netlify Deploy",
-          ],
-          imagePath: "/assets/images/arMotors.png",
         },
       ],
     },
@@ -163,10 +130,10 @@ export const LANGUAGES = {
     about: {
       titleSection: "Sobre Mim",
       paragraphs: [
-        "Sempre fui apaixonado por jogos, isso despertou minha curiosidade para entender como isso funciona, como tudo é desenvolvido, como cada comando de controle e tela funcionam, graças a esse sentimento, me encontrei na área da tecnologia e hoje posso dizer que sou um programador.",
-        " Meu primeiro contato com programação foi justamente me questionando como os jogos funcionam, com 14 anos de idade em parceria com meu melhor amigo até hoje, abri meu primeiro servidor do meu jogo favorito, foi uma experiência incrível para nós nessa idade, tivemos que investir muito tempo e um pouco de dinheiro para fazer tudo funcionar, mas apesar de todas as dificuldades, conseguimos. A medida que o servidor ganhava mais proporções mais difícil era manter, pessoas mal intencionadas começaram a atacar (DDOS) nosso servidor, nos fazendo desanimar e desistir da ideia de mantê-lo funcionando, não tínhamos capital para acionar um serviço de segurança de rede, o que dificultou de continuarmos nosso sonho.",
-        "Hoje depois de 12 anos, tive a grande oportunidade de retomar os estudos na área de programação, estou cursando desenvolvimento web na ",
-        ", uma escola que permite com que você estude e só pague a partir do momento em que estiver empregado, estou iniciando uma nova etapa da minha vida e correndo atrás do meu sonho, que é impactar as pessoas através da tecnologia fazendo o que eu mais amo.",
+        "Desenvolvedor Full Stack com 3 anos de experiência e especialista em construir soluções web 	completas e eficientes.",
+        "Atuando principalmente com JavaScript e seus frameworks (ReactJS, NodeJS, ExpressJS, 	TypeScript, NextJS), garantindo a performance e escalabilidade das aplicações, assim como banco de dados SQL e NoSQL, ORM's e Query Builders.",
+        "Graduando em Inteligência Artificial Aplicada (PUC-PR) e com especialização em Desenvolvimento 	Web (Trybe).",
+        "Aplico diariamente a metodologia de Aprendizagem Contínua, justamente para aprimorar minhas 	habilidades e conhecimentos para entregar o melhor resultado.",
       ],
     },
     work: {
@@ -178,8 +145,11 @@ export const LANGUAGES = {
             site: "https://www.coopercarga.com.br/",
           },
           about: [
-            "Meu primeiro e atual trabalho como desenvolvedor fullstack, estou aprendendo muito aqui.",
-            "Estou trabalhando com uma nova ferramenta no back-end chamada AdoniJS.",
+            "Desenvolvi módulos importantes para o sistema, como cálculo de margem mínima no atendimento de cargas, checklists de cargas, veículos e entregas.",
+            "Atualizei o código legado do React do projeto para a mais nova já em TypeScript.",
+            "Colaborei na análise de requisitos dos projetos, ajudando a definir tarefas para evitar conflitos com outras funcionalidades presentes no sistema e retrabalhos.",
+            "Desenvolvi e mantive aplicações web utilizando TypeScript, JavaScript, React, Node.js e o framework Adonis.js.",
+            "Implementei melhorarias para a experiência do usuário e segurança do sistema.",
           ],
           date: {
             in: "Set - 2023",
@@ -193,8 +163,12 @@ export const LANGUAGES = {
             site: "https://previdenciarista.com/",
           },
           about: [
-            "Meu primeiro e atual trabalho como desenvolvedor, estou aprendendo muito aqui.",
-            "Aprendi a usar Styled Components, a trabalhar com biblioteca de componentes antd, storybook, Nextjs e TypeScript.",
+            "Responsável pela migração dos componentes da aplicação de JavaScript para TypeScript, garantindo maior segurança e manutenção do código.",
+            "Refatorei e melhorei o desempenho de códigos legados, contribuindo para uma melhor experiência do usuário.",
+            "Colaborei com o designer do time para desenvolver o site e blog do Previdenciarista em Next.js, seguindo fielmente o layout proposto e cuidando de cada detalhe com perfeccionismo.",
+            "Estudei e implementei micro-frontends utilizando single-spa, melhorando a modularidade e a escalabilidade da aplicação.",
+            "Responsável pelo Design System do projeto, realizando alterações e manutenções em todos os componentes React do site/blog e também da aplicação principal.",
+            "Documentei todos os componentes do sistema no Storybook, criando um ambiente isolado para a criação e manipulação de componentes, facilitando a manipulação e a manutenção do mesmo.",
           ],
           date: {
             in: "Fev - 2022",
@@ -208,32 +182,7 @@ export const LANGUAGES = {
       titleSection: "Alguns desenvolvimentos",
       projects: [
         {
-          name: "Jogos grátis para jogar",
-          url: "https://free-to-play-project.vercel.app/",
-          githubUrl: "https://github.com/lucasquearis/free-to-play-project",
-          description:
-            "Um aplicativo que oferece uma variedade de jogos grátis. Para aqueles momentos de tédio ou até mesmo para encontrar um jogo para jogar",
-          technologies: [
-            "Reactjs",
-            "Context Api",
-            "Bootstrap",
-            "Free API",
-            "React Router DOM",
-            "Vercel Deploy",
-          ],
-          imagePath: "/assets/images/freeToPlayGames.png",
-        },
-        {
-          name: "Meu primeiro Portfólio",
-          url: "https://lucasquearis.github.io/portfolio/",
-          githubUrl: "https://github.com/lucasquearis/portfolio",
-          description:
-            "Esse foi meu primeiro portfólio, terminei assim que terminei o módulo Front-end no Trybe",
-          technologies: ["Reactjs", "Bootstrap", "Github Pages Deploy"],
-          imagePath: "/assets/images/portfolio_1.png",
-        },
-        {
-          name: "Meu segundo Portfólio",
+          name: "Portfólio",
           url: "#",
           githubUrl: "https://github.com/lucasquearis/portfolioV2",
           description:
@@ -249,21 +198,6 @@ export const LANGUAGES = {
             "Um projeto que eu fiz para um desafio técnico para vaga de front-end, projeto feito em 2 dias totalmente responsivo, um desafio muito legal",
           technologies: ["React", "Bootstrap", "Netlify Deploy"],
           imagePath: "/assets/images/foreverBaby.png",
-        },
-        {
-          name: "Ar Motors",
-          url: "https://armotoparts-project.netlify.app/",
-          githubUrl: "https://github.com/lucasquearis/projeto-pessoal",
-          description:
-            "Meu primeiro job free-lancer aprendi bastante com esse projeto, a manipular o mapa e geolocalização.",
-          technologies: [
-            "React",
-            "Mapbox-GL",
-            "antD",
-            "Styled Components",
-            "Netlify Deploy",
-          ],
-          imagePath: "/assets/images/arMotors.png",
         },
       ],
     },

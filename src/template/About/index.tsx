@@ -28,20 +28,6 @@ export default function About() {
                   return (
                     <p key={index} className="mb-2 text-primary-text-navy-navy">
                       {paragraph}
-                      {index == 2 && (
-                        <>
-                          <StyledLink
-                            name="Trybe"
-                            target="_blank"
-                            url="https://www.betrybe.com/"
-                          />
-                          {
-                            LANGUAGES[selectedLanguage].about.paragraphs[
-                              index + 1
-                            ]
-                          }
-                        </>
-                      )}
                     </p>
                   );
                 }
